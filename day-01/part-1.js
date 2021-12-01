@@ -18,3 +18,7 @@ const getDepth = (data) => {
 };
 
 console.log(getDepth(depths));
+
+module.exports = {
+    getDepth
+}

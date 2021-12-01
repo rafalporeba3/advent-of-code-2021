@@ -1,4 +1,5 @@
 const depths = require('../helpers/file').readInts('day-01/input.txt');
+const { getDepth } = require('./part-1');
 
 const getWindows = () => {
     const windows = [];
@@ -16,21 +17,6 @@ const getWindows = () => {
     return windows;
 };
 
-const getDepths = (windows) => {
-    let increase = 0;
-    let lastDepth = null;
-
-    for(const depth of windows) {
-        if(lastDepth !== null && depth > lastDepth) {
-            increase +=1;
-        }
-
-        lastDepth = depth;
-    }
-
-    return increase;
-}
-
-console.log(getDepths(getWindows()));
+console.log(getDepth(getWindows()));
 
 
