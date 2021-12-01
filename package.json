@@ -1,0 +1,10 @@
+{
+  "name": "advent-of-code-2021",
+  "version": "1.0.0",
+  "description": "Solutions to Advent of Code 2021 challenge",
+  "scripts": {
+    "day1": "npm run day1:part1",
+    "day1:part1": "node day-01/part-1.js"
+  },
+  "author": "Rafal Poreba"
+}
